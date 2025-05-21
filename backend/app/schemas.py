@@ -1,7 +1,9 @@
 from pydantic import BaseModel
 
-class Message(BaseModel):
-    text: str
+class User(BaseModel):
+    id: int
+    username: str
+    email: str
 
-class Response(BaseModel):
-    echo: str
+    class Config:
+        orm_mode = True
