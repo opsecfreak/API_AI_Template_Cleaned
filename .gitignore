@@ -1,0 +1,46 @@
+# === Global ===
+.env
+*.env
+*.env.*
+
+# === Python / FastAPI ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.sqlite3
+*.db
+*.log
+
+# Virtual Environments
+venv/
+env/
+.venv/
+.env/
+
+# === Node / Next.js ===
+node_modules/
+.next/
+out/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# === Docker ===
+*.pid
+*.sock
+docker-compose.override.yml
+
+# === IDEs ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+
+# === OS / Misc ===
+.DS_Store
+Thumbs.db
+ehthumbs.db
