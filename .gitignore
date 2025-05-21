@@ -2,7 +2,7 @@
 .env
 *.env
 *.env.*
-
+railway.json
 # === Python / FastAPI ===
 __pycache__/
 *.py[cod]
