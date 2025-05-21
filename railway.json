@@ -1,12 +1,15 @@
 {
-  "$schema": "https://railway.com/railway.schema.json",
-  "build": {
-    "buildCommand": "nix run build"
-  },
-  "deploy": {
-    "preDeployCommand": ["npm run db:migrate"],
-    "startCommand": "echo starting!",
-    "healthcheckPath": "/",
-      "healthcheckTimeout": 100
+    "$schema": "https://railway.com/railway.schema.json",
+    "build": {
+        "buildCommand": "nix run build"
+    },
+    "deploy": {
+        "preDeployCommand": ["npm run db:migrate"],
+        "startCommand": "npm start",
+        "healthcheckPath": "/",
+        "healthcheckTimeout": 100
+    },
+    "env": {
+        "INTERNAL_HOST": "nodejs.railway.internal"
     }
-  }
+}
